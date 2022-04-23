@@ -1,14 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
-    <meta charset="UTF-8">
+  <meta charset="UTF-8">
+  <title>Ueng Web Page</title>
 
-    <title>Ueng Studio</title>
+  <link rel="shortcut icon" href="https://cdn.discordapp.com/attachments/905771094370295900/967269360467066910/110_20220423124259.png">
+  <link rel="icon" href="https://cdn.discordapp.com/attachments/905771094370295900/967269360467066910/110_20220423124259.png">
 
-    <link rel="shortcut icon" href="https://cdn.discordapp.com/attachments/905771094370295900/967269360467066910/110_20220423124259.png">
-    <link rel="icon" href="https://cdn.discordapp.com/attachments/905771094370295900/967269360467066910/110_20220423124259.png">
+  <link rel="stylesheet" href="style.css">
 
-    <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 
 <body oncontextmenu='return false' ondragstart='return false' onselectstart='return false'>
@@ -19,34 +22,74 @@
     </a>
   </h2>
 
-  <span class="pad">
+  <a href="#about">
+    <span class="pad">
   ABOUT
-  </span>
-  <span class="pad">
+    </span>
+  </a>
+  <a href="#projects">
+    <span class="pad">
   PROJECTS
-  </span>
-
-  <h2>
-    <img class="menubutton">
-  </h2>
+    </span>
+  </a>
   </header>
-  <div data-aos="fade-up" data-aos-easing="ease" data-aos-delay="500">
-  <h1 class="title">
-      <center>
-        We are trying to be better.
-      </center>
-    </h1>
-  </div>
-  <div data-aos="fade-up" data-aos-easing="ease" data-aos-delay="500">
-    <h2 class="readmore">
-      <center>
-        readmore
-      </center>
-    </h2>
-  </div>
+  <section>
 
-  <video width="100%" height="auto" muted autoplay class="blackvid">
-    <source src="https://cdn.discordapp.com/attachments/905771094370295900/967259710757687316/UengStudio.mp4" type="video/mp4">
-  </video>
+    <video width="100%" height="auto" muted autoplay class="blackvid">
+      <source src="https://cdn.discordapp.com/attachments/905771094370295900/967344563268247572/Intro.mp4" type="video/mp4">
+    </video>
+
+    <div data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-anchor-placement="center-bottom" data-aos-delay="100">
+      <h1 class="title">
+        우리는 더 나은 팀이 되기 위해 노력중입니다.
+      </h1>
+    </div>
+  </section>
+  <section class="secbody">
+    <section class=p2>
+
+      <h1 class="h1" id="about">
+        <center>
+          ABOUT
+        </center>
+      </h1>
+
+    </section>
+    <section class="About">
+
+      <div data-aos="fade-left" data-aos-easing="easeing" data-aos-anchor-placement="center-bottom" data-aos-delay="500">
+        <img class="Aboutlogoimg">
+      </div>
+      <div data-aos="fade-left" data-aos-easing="easeing" data-aos-anchor-placement="center-bottom" data-aos-delay="500">
+        <p class="p2p">
+          우엥 스튜디오는 2021년 만들어진 팀입니다.<br><br>우엥 스튜디오는 NEWE에 소속된 팀입니다.<br><br>창업자 : Ueng
+        </p>
+      </div>
+    </section>
+    <section class=p3>
+
+      <h1 class="h1" id="projects">
+        <center>
+          PROJECTS
+        </center>
+      </h1>
+
+    </section>
+    <section class=islet>
+      <a href="Cannot Play Yet">
+        <img src="https://cdn.discordapp.com/attachments/964724323707408475/967093227180159036/202_20220423010258.png" alt="UengStudio:Islet" class="isletimg">
+      </a>
+    </section>
+    <footer>
+      <span class="cmessage" style="color:#FFFFFF">
+        <center>
+          Made by. Ueng, Help. Mua<br>@Copyright 2021.  UengStudio.  All rights reserved.
+        </center>
+      </span>
+    </footer>
+  </section>
 </body>
 </html>
+<script>
+  AOS.init(500);
+</script>
