@@ -1,5 +1,12 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Karla:wght@800&family=Nunito:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@500&family=Do+Hyeon&display=swap');
+
+* {font-family: 'Nunito', sans-serif;}
+
 body {
-  background-color: black;
+  background-color:#1D1D1D;
   justify-content: center;
   margin: 0;
   padding: 0;
@@ -17,18 +24,38 @@ a {
 .title{
   position: relative;
 
-  font-size: 50px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 100px;
 
-  top: 220px;
+  top: 75px;
 
   background:linear-gradient(to right,rgb(105, 255, 105) 0%,rgba(0, 255, 255, 1) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
+.readmore{
+  position: relative;
+
+  font-family: 'Nunito', sans-serif;
+  font-size: 70px;
+
+  top: 75px;
+
+  background:linear-gradient(to left,rgb(105, 255, 105) 0%,rgba(0, 255, 255, 1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.blackvid{
+  position: relative;
+
+  top: 100px;
+}
 
 .pad{
   font-size: 20px;
+  font-family: 'Karla', sans-serif;
 
   padding: 0.5rem;
 }
@@ -57,8 +84,8 @@ header {
   height: auto;
   content:url("https://cdn.discordapp.com/attachments/905771094370295900/967269360248967248/109_20220423124252.png");
 }
-.menubutton{
 
+.menubutton{
   max-width: 15%;
   height: auto;
   content:url("https://cdn.discordapp.com/attachments/905771094370295900/967235775240482846/108_20220423102926.png");
@@ -76,49 +103,4 @@ header {
       height: auto;
       content:url("https://cdn.discordapp.com/attachments/905771094370295900/967235775240482846/108_20220423102926.png");
   }
-  }
-
-  position: fixed ;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 10px;
-  padding: 1.5rem;
-  color: black;
-  background-color: rgba( 155, 155, 155, 0.5 );
-  font-weight: bold;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  -webkit-transition-duration:0.4s;
-  -webkit-transition-timing-function:ease;
-  transition-duration:0.4s;
-  transition-timing-function:ease;
-}
-
-.logoimg{
-  max-width: 15%;
-  height: auto;
-  content:url("https://cdn.discordapp.com/attachments/905771094370295900/967186287419330700/106_20220423071113.png");
-}
-.menubutton{
-
-  max-width: 15%;
-  height: auto;
-  content:url("https://cdn.discordapp.com/attachments/905771094370295900/967235775240482846/108_20220423102926.png");
-}
-
-@media (max-width: 800px) {
-  .logoimg{
-    max-width: 30%;
-    height: auto;
-    content:url("https://cdn.discordapp.com/attachments/905771094370295900/964718136299511839/91_20220416114349.png");
-  }
-  .menubutton{
-
-      max-width: 30%;
-      height: auto;
-      content:url("https://cdn.discordapp.com/attachments/905771094370295900/967235775240482846/108_20220423102926.png");
- }
 }
