@@ -147,7 +147,7 @@ header {
 
   font-size: 75px;
 
-  background: linear-gradient(to right, rgb(100,100,100) 0%, rgba(0,0,0,1) 100%);
+  background: linear-gradient(to right, rgb(200,200,200) 0%, rgba(255,255,255,1) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
@@ -168,7 +168,7 @@ header {
     padding-bottom: 100px;
     padding-top: 100px;
 
-    background: linear-gradient(to left, rgb(155,155,155) 0%, rgba(55,55,55,1) 100%);
+    background: linear-gradient(to left, rgb(155,155,155) 0%, rgba(255,255,255,1) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
