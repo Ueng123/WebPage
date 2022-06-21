@@ -1,262 +1,230 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Dongle&family=Indie+Flower&family=Karla:wght@800&family=Nunito:wght@500&family=Poor+Story&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@500&family=Do+Hyeon&display=swap');
-
-* {font-family: 'Nunito', sans-serif;}
-
-body {
-  background-color:#FFF;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
-}
-
-::-webkit-scrollbar {
-   display: none;
-}
-
-a {
-  text-decoration-line: none;
-  color: inherit;
-}
-
-.title{
-  position: relative;
-
-  font-family: 'Nunito', sans-serif;
-
-  text-align: center;
-
-  padding-bottom: 1000px;
-
-  font-size: 100px;
-
-  background:linear-gradient(to right,rgb(105, 255, 105) 0%,rgba(15, 255, 235, 1) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.gbutton{
-
-  width: 200px;
-  height: 70px;
-
-  border-radius: 15px;
-  border-width: 0px;
-
-  font-size: 30px;
-  font-family: 'Nunito', sans-serif;
-
-  background:linear-gradient(to right,#0F0,#1F1)
-
-}
-
-.blackvid{
-  position: relative;
-}
-.pad{
-  font-size: 20px;
-  font-family: 'Karla', sans-serif;
-
-  padding: 0.5rem;
-}
-
+/* ÃƒÂ«Ã‚Â©Ã¢â‚¬ÂÃƒÂ«Ã¢â‚¬Â°Ã‚Â´ */
 header {
-  position: fixed ;
+  position: fixed;
   z-index: 1;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 10px;
-  padding: 1.5rem;
-  color: black;
-  background-color: rgba( 155, 155, 155, 0.5 );
+  top:0px;
+  left:0px;
+  bottom:0px;
+  weight: 5px;
+  padding: 0px;
+  color: white;
+  background-color: rgb(0, 0, 0);
   font-weight: bold;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: left;
+  -webkit-transition-duration:0.3s;
+  -webkit-transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration:0.3s;
+  transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+/* ÃƒÂ¬Ã…Â¡Ã‚Â°ÃƒÂ¬Ã¢â‚¬â€Ã‚Â¥ ÃƒÂ¬Ã…Â Ã‚Â¤ÃƒÂ­Ã…Â Ã…â€œÃƒÂ«Ã¢â‚¬ÂÃ¢â‚¬ÂÃƒÂ¬Ã‹Å“Ã‚Â¤ ÃƒÂ«Ã‚Â²Ã¢â‚¬Å¾ÃƒÂ­Ã…Â Ã‚Â¼ */
+.menubutton {
+  position: relative;
+  width: 75px;
+  height: 75px;
+
+  top:20px;
+  left:0px;
+  right:0px;
+
+  color: white;
+  background-color: rgb(0, 0, 0);
+
+  -webkit-transition-duration:0.3s;
+  -webkit-transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration:0.3s;
+  transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menuimg {
+  position: relative;
+  align: left;
+
+  left: 0px;
+  top: 0px;
+
+  width: 50px;
+  height: auto;
+
   -webkit-transition-duration:0.4s;
   -webkit-transition-timing-function:ease;
   transition-duration:0.4s;
   transition-timing-function:ease;
 }
 
-.logoimg{
-  max-width: 20%;
-  height: auto;
-  content:url("https://cdn.discordapp.com/attachments/905771094370295900/967186287419330700/106_20220423071113.png");
+.menubutton2 {
+  position: relative;
+  width: 75px;
+  height: 75px;
+
+  top:70px;
+  left:0px;
+  right:0px;
+
+  color: white;
+  background-color: rgb(0, 0, 0);
+
+  -webkit-transition-duration:0.3s;
+  -webkit-transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration:0.3s;
+  transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.menuimg2 {
+  position: relative;
+  align: left;
+
+  left: 0px;
+  top: 0px;
+
+  width: 50px;
+  height: auto;
+
+  -webkit-transition-duration:0.4s;
+  -webkit-transition-timing-function:ease;
+  transition-duration:0.4s;
+  transition-timing-function:ease;
+}
+
+.menubutton3 {
+  position: relative;
+  width: 75px;
+  height: 75px;
+
+  top:70px;
+  left:0px;
+  right:0px;
+
+  color: white;
+  background-color: rgb(0, 0, 0);
+
+  -webkit-transition-duration:0.3s;
+  -webkit-transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration:0.3s;
+  transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menuimg3 {
+  position: relative;
+  align: left;
+
+  left: 0px;
+  top: 0px;
+
+  width: 50px;
+  height: auto;
+
+  -webkit-transition-duration:0.4s;
+  -webkit-transition-timing-function:ease;
+  transition-duration:0.4s;
+  transition-timing-function:ease;
+}
+
+.button:hover {
+  position: relative;
+  width: 175px;
+  height: 75px;
+  align-items: left;
+
+  color: white;
+  background-color: rgb(25, 25, 25);
+
+  -webkit-transition-duration:0.3s;
+  -webkit-transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration:0.3s;
+  transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ë³¸ë¬¸ */
+.p {
+  position: relative;
+
+  text-align: left;
+
+  padding-top: 100px;
+  padding-left: 200px;
+  font-size: 200%;
+
+  -webkit-transition-duration:0.4s;
+  -webkit-transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration:0.4s;
+  transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+}
+.title {
+  position: relative;
+
+  text-align: center;
+  left: 25px;
+  top: 75px;
+
+  font-size: 200%;
+
+  -webkit-transition-duration:0.4s;
+  -webkit-transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration:0.4s;
+  transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media (max-width: 1000px) {
+  .p{
+   font-size: 200%;
+   padding-left: 100px;
+  }
+}
 @media (max-width: 800px) {
-  .logoimg{
-    max-width: 20%;
-    height: auto;
-    content:url("https://cdn.discordapp.com/attachments/905771094370295900/967269659210563645/110_20220423124406.png");
+  .p{
+    font-size: 150%;
+    width: 480px;
+    padding-left: 85px;
+  }
+}
+@media (max-width: 550px) {
+  .p{
+    font-size: 100%;
+    width: 350px;
+    padding-left: 60px;
+    left: 35px;
+  }
+}
+@media (max-width: 450px) {
+  .p{
+    font-size: 75%;
+    width: 200px;
+    padding-left: 50px;
+    left: 35px;
+  }
+}
+@media (max-width: 300px) {
+  .p{
+    font-size: 50%;
+    width: 100px;
+    padding-left: 35px;
+    left: 35px;
   }
 }
 
-.secbody{
-
-  position: relative;
-
-  width: 100%;
-  height:auto;
-
-  background: linear-gradient(to bottom, rgb(55,55,55) 0%, rgba(0,0,0,1) 100%);
-
+@media (max-width: 800px) {
+  .text{
+    font-size: 150%;
+  }
 }
-
-.p2{
-
-  position: relative;
-
-  width: 100%;
-  height:150px;
-
-  background-color: rgb(55,55,55);
+@media (max-width: 550px) {
+  .text{
+    font-size: 100%;
+    left: 35px;
+  }
 }
-
-.About{
-
-  position: relative;
-
-  width: 100%;
-  height:700px;
-
-  background-color: rgb(55,55,55);
+@media (max-width: 450px) {
+  .text{
+    font-size: 75%;
+    left: 35px;
+  }
 }
-
-.p3{
-
-  position: relative;
-
-  width: 100%;
-  height:150px;
-
-  bottom: 125px;
-
-  background-color: rgb(15,15,15);
-
-}
-
-.h1{
-
-  position: relative;
-  top: 35px;
-
-  font-size: 75px;
-
-  background: linear-gradient(to right, rgb(200,200,200) 0%, rgba(255,255,255,1) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-
-}
-
-.p2p{
-
-    position: relative;
-    top: 25px;
-
-    z-index: 2;
-
-    font-size: 35px;
-    font-family: 'Poor Story', sans-serif;
-
-    text-align: center;
-
-    padding-bottom: 100px;
-    padding-top: 100px;
-
-    background: linear-gradient(to left, rgb(155,155,155) 0%, rgba(255,255,255,1) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-
-}
-
-.social{
-	
-	font-size: 75px;
-	
-	background: linear-gradient(to right, rgb(200,200,200) 0%, rgba(255,255,255,1) 100%);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	
-}
-
-.socialback{
-
-	background: linear-gradient(to right, rgb(5,5,5) 0%, rgba(0,0,0,0.5) 100%);
-	
-	width:100%;
-	height:500px;
-	
-}
-
-.ytlink{
-	font-size:35px;
-	position: relative;
-
-  z-index: 2;
-  font-family: 'Poor Story', sans-serif;
-
-  text-align: center;
-
-  padding-bottom: 100px;
-  padding-top: 5px;
-  background: linear-gradient(to left, rgb(0,155,155) 0%, rgba(255,255,255,1) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-	
-}
-
-.link{
-	font-size:35px;
-	position: relative;
-
-  z-index: 2;
-  font-family: 'Poor Story', sans-serif;
-
-  text-align: center;
-
-  padding-bottom: 500px;
-
-  background: linear-gradient(to left, rgb(0,155,155) 0%, rgba(255,255,255,1) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-	
-}
-
-.cmessage{
-	
-	bottom:100px;
-	
-  font-size: 25px;
-  font-family: "Nunito", sans-serif;
-
-}
-
-.islet{
-
-  position:relative;
-
-  bottom: 130px;
-
-  width: 100%;
-  height: auto;
-
-  background-color: rgb(100,100,100);
-
-}
-
-.isletimg{
-
-  width: 100%;
-  height:auto;
-
-}
-
-.copyright{
-	width:100%;
-	height:auto;
+@media (max-width: 300px) {
+  .text{
+    font-size: 50%;
+    left: 35px;
+  }
 }
