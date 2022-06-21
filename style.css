@@ -145,7 +145,7 @@ header {
   text-align: left;
 
   padding-top: 100px;
-  padding-left: 200px;
+  padding-left: 100px;
   font-size: 200%;
 
   -webkit-transition-duration:0.4s;
@@ -167,10 +167,25 @@ header {
   transition-duration:0.4s;
   transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
+.copyright {
+  position: relative;
+
+  text-align: center;
+  padding-top: 30px;
+  left: 25px;
+
+    font-size: 100%;
+
+  -webkit-transition-duration:0.4s;
+  -webkit-transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration:0.4s;
+  transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 @media (max-width: 1000px) {
   .p{
    font-size: 200%;
-   padding-left: 100px;
+   padding-left: 90px;
   }
 }
 @media (max-width: 800px) {
@@ -225,6 +240,30 @@ header {
 @media (max-width: 300px) {
   .text{
     font-size: 50%;
+    left: 35px;
+  }
+}
+
+@media (max-width: 800px) {
+  .text{
+    font-size: 80%;
+  }
+}
+@media (max-width: 550px) {
+  .text{
+    font-size: 50%;
+    left: 35px;
+  }
+}
+@media (max-width: 450px) {
+  .text{
+    font-size: 35%;
+    left: 35px;
+  }
+}
+@media (max-width: 300px) {
+  .text{
+    font-size: 20%;
     left: 35px;
   }
 }
