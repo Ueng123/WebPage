@@ -29,6 +29,12 @@ body{
     transition: var(--tran-05);
 }
 
+footer{
+    text-align: center;
+    
+    font-size: 35px;
+}
+
 ::selection{
     background-color: var(--primary-color);
     color: #fff;
