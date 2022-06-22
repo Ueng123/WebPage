@@ -223,8 +223,13 @@ header .image-text .profession{
     border: 0;
     outline: 0;
 
+    border-radius: 5px;
+
     font-size:35px;
     color: var(--text-color);
+
+    width: 60px;
+    transition: var(--tran-04);
 }
 .greenbtn:hover{
     background-color: rgb(55 255 55);
@@ -234,6 +239,9 @@ header .image-text .profession{
 
     font-size:35px;
     color: var(--text-color);
+
+    width: 80px;
+    transition: var(--tran-04);
 }
 
 .sidebar.close ~ .home{
