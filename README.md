@@ -1,8 +1,5 @@
-# UengStudioPage
+# WebPage
 Ueng Studio Web Page
 
 Dev : Ueng
 @UengStudio
-
-Help : MUA
-@AmutextStudios
