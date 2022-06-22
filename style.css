@@ -218,6 +218,23 @@ header .image-text .profession{
     color: var(--text-color);
     padding: 12px 60px;
 }
+.greenbtn{
+    background-color: rgb(55 255 55);
+    border: 0;
+    outline: 0;
+
+    font-size:35px;
+    color: var(--text-color);
+}
+.greenbtn:hover{
+    background-color: rgb(55 255 55);
+    border: 5px;
+    border-color: rgba(55 55 255 0.5);
+    outline: 0;
+
+    font-size:35px;
+    color: var(--text-color);
+}
 
 .sidebar.close ~ .home{
     left: 78px;
