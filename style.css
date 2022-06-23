@@ -218,6 +218,13 @@ header .image-text .profession{
     color: var(--text-color);
     padding: 12px 60px;
 }
+.home .text .title{
+    text-align: center;
+    
+    font-size: 50px;
+
+    transition: var(--tran-04);
+}
 
 
 .greenbtn{
@@ -272,7 +279,6 @@ header .image-text .profession{
     height: 35px;
     transition: var(--tran-04);
 }
-
 
 .sidebar.close ~ .home{
     left: 78px;
