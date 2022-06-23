@@ -1,78 +1,281 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
+/* Google Font Import - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
 
-  <meta charset='UTF-8'>
-  
-  <title>UENGSTUDIO</title>
+:root{
+    /* ===== Colors ===== */
+    --body-color: rgb(245 245 245);
+    --sidebar-color: #FFF;
+    --primary-color: #5a5a5a;
+    --primary-color-light: #F6F5FF;
+    --toggle-color: #DDD;
+    --text-color: #4a4a4a;
 
-  <link rel="shortcut" icon href="https://cdn.discordapp.com/attachments/905771094370295900/964721478207701002/190_20220416115831.png">
-  <link rel="icon" href="https://cdn.discordapp.com/attachments/905771094370295900/964721478207701002/190_20220416115831.png">
-  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    /* ====== Transition ====== */
+    --tran-03: all 0.2s ease;
+    --tran-03: all 0.3s ease;
+    --tran-04: all 0.3s ease;
+    --tran-05: all 0.3s ease;
+}
 
-  <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-  <nav class="sidebar close">
-    <header>
-        <div class="image-text">
-            <span class="image">
-                <img src="https://cdn.discordapp.com/attachments/905771094370295900/964721478207701002/190_20220416115831.png" alt="https://cdn.discordapp.com/attachments/905771094370295900/964721478207701002/190_20220416115831.png">
-            </span>
+body{
+    min-height: 100vh;
+    background-color: var(--body-color);
+    transition: var(--tran-05);
+}
 
-            <div class="text logo-text">
-                <span class="name">UengStudio</span>
-                <span class="profession">Webpage</span>
-            </div>
-        </div>
+::selection{
+    background-color: var(--primary-color);
+    color: #fff;
+}
+/* ===== Sidebar ===== */
+ .sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    padding: 10px 14px;
+    background: var(--sidebar-color);
+    transition: var(--tran-05);
+    z-index: 100;  
+}
+.sidebar.close{
+    width: 88px;
+}
 
-        <i class='bx bx-chevron-right toggle'></i>
-    </header>
+/* ===== Reusable code - Here ===== */
+.sidebar li{
+    height: 50px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
 
-    <div class="menu-bar">
-      <div class="menu">
-        <ul class="menu-links">
-          <li class="nav-link">
-            <a href="#home">
-                <i class='bx bx-home-alt icon' ></i>
-                <span class="text nav-text">Home</span>
-            </a>
-          </li>
+.sidebar header .image,
+.sidebar .icon{
+    min-width: 60px;
+    border-radius: 6px;
+}
 
-          <li class="nav-link">
-            <a href="#about">
-              <i class='bx bx-book icon' ></i>
-              <span class="text nav-text">About</span>
-            </a>
-          </li>
+.sidebar .icon{
+    min-width: 60px;
+    border-radius: 6px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
 
-          <li class="nav-link">
-            <a href="#projects">
-              <i class='bx bx-folder icon' ></i>
-              <span class="text nav-text">Project</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+.sidebar .text,
+.sidebar .icon{
+    color: var(--text-color);
+    transition: var(--tran-03);
+}
 
-<section class="home">
-    <div class="text">
+.sidebar .text{
+    font-size: 17px;
+    font-weight: 500;
+    white-space: nowrap;
+    opacity: 1;
+}
+.sidebar.close .text{
+    opacity: 0;
+}
+/* =========================== */
 
-      <h1>Ueng Studio</h1>
-      <p><br>우엥스튜디오에 오신걸 환영합니다.<br>우엥스튜디오는 여러분들께 재미를 드리기 위해 열심히 노력하고 있습니다.<br><br><br><br><br></p>
-      <h2>About</h2>
-      <p><br>우엥스튜디오는 2019년 처음 만들어져 2022년부터 활발한 작업이 이루어지고 있습니다.<br>우엥스튜디오에서는 게임, 디스코드 봇 등의 다양한 서비스를 제공합니다.<br><br><br></p>
-      <h2>Project</h2>
-      <p><br>ISLET - 제작 : 우엥스튜디오, ItareWorks <a href="https://www.roblox.com/games/9348175059/Islet#!/about"><button class="greenbtn" title="Play Islet Now"><p>PLAY</p></button></a></p>
+.sidebar header{
+    position: relative;
+}
 
-      
-    </div>
-</section>
-<script type="text/javascript" src="./functions.js"></script>
-</body>
-<footer>
-  <p class="text">Copyright 2022. UengStudio. All rights reserved.</p>   
-</footer>
-</html>
+.sidebar header .image-text{
+    display: flex;
+    align-items: center;
+}
+.sidebar header .logo-text{
+    display: flex;
+    flex-direction: column;
+}
+header .image-text .name {
+    margin-top: 2px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+header .image-text .profession{
+    font-size: 16px;
+    margin-top: -2px;
+    display: block;
+}
+
+.sidebar header .image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar header .image img{
+    width: 70px;
+    border-radius: 6px;
+}
+
+.sidebar header .toggle{
+    position: absolute;
+    top: 50%;
+    right: -25px;
+    transform: translateY(-50%) rotate(180deg);
+    height: 25px;
+    width: 25px;
+    background-color: var(--primary-color);
+    color: var(--sidebar-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    cursor: pointer;
+    transition: var(--tran-05);
+}
+
+.sidebar.close .toggle{
+    transform: translateY(-50%) rotate(0deg);
+}
+
+.sidebar .menu{
+    margin-top: 40px;
+}
+
+.sidebar li a{
+    list-style: none;
+    height: 100%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: var(--tran-03);
+}
+
+.sidebar li a:hover{
+    background-color: var(--primary-color);
+}
+.sidebar li a:hover .icon,
+.sidebar li a:hover .text{
+    color: var(--sidebar-color);
+}
+.sidebar .menu-bar{
+    height: calc(100% - 55px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow-y: scroll;
+}
+.menu-bar::-webkit-scrollbar{
+    display: none;
+}
+.sidebar .menu-bar .mode{
+    border-radius: 6px;
+    background-color: var(--primary-color-light);
+    position: relative;
+    transition: var(--tran-05);
+}
+
+.switch::before{
+    content: '';
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    background-color: var(--sidebar-color);
+    transition: var(--tran-04);
+}
+
+.home{
+    position: absolute;
+    top: 0;
+    top: 0;
+    left: 250px;
+    height: 100vh;
+    width: calc(100% - 250px);
+    background-color: var(--body-color);
+    transition: var(--tran-05);
+}
+.home .text{
+    font-size: 30px;
+    font-weight: 500;
+    color: var(--text-color);
+    padding: 12px 60px;
+}
+
+
+.greenbtn{
+    background-color: rgb(55 255 55);
+    border: 0;
+    outline: 0;
+
+    border-radius: 5px;
+
+    font-size:25px;
+    color: var(--text-color);
+
+    width: 80px;
+    height: 35px;
+    transition: var(--tran-04);
+}
+.greenbtn:hover{
+    background-color: rgb(65, 235, 27);
+    outline: 0;
+
+    font-size:25px;
+    color: var(--text-color);
+
+    width: 95px;
+    height: 35px;
+    transition: var(--tran-04);
+}
+
+.bluebtn{
+    background-color: rgb(50, 230, 19);
+    border: 0;
+    outline: 0;
+
+    border-radius: 5px;
+
+    font-size:25px;
+    color: rgb(140,140,140);
+
+    width: 80px;
+    height: 35px;
+    transition: var(--tran-04);
+}
+.bluebtn:hover{
+    background-color: rgb(55, 225, 17);
+    outline: 0;
+    border: 0;
+
+    font-size:25px;
+    color: rgb(125,125,125);
+
+    width: 95px;
+    height: 35px;
+    transition: var(--tran-04);
+}
+
+
+.sidebar.close ~ .home{
+    left: 78px;
+    height: 100vh;
+    width: calc(100% - 78px);
+}
