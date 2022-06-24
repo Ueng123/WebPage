@@ -292,3 +292,10 @@ header .image-text .profession{
     height: 100vh;
     width: calc(100% - 78px);
 }
+
+/* ===== footer ===== */
+.ftext{
+    font-size: 20px;
+    
+    color: var(--text-color);   
+}
