@@ -17,10 +17,14 @@
     --text-color: #4a4a4a;
 
     /* ====== Transition ====== */
-    --tran-03: all 0.2s ease;
+    --tran-02: all 0.2s ease;
     --tran-03: all 0.3s ease;
     --tran-04: all 0.3s ease;
     --tran-05: all 0.3s ease;
+
+    /* ===== Any ===== */
+    --button-play-width: 35px;
+    --button-play-mxwidth: 80px;
 }
 
 body{
@@ -228,28 +232,31 @@ header .image-text .profession{
 
 
 .greenbtn{
-    background-color: rgb(55 255 55);
+    background-color: rgb(105 255 105);
     border: 0;
     outline: 0;
 
     border-radius: 5px;
 
     font-size:25px;
-    color: var(--text-color);
+    font-weight: 0;
 
-    width: 80px;
+    color: var(--body-color);
+
+    width: var(--button-play-width);
     height: 35px;
-    transition: var(--tran-04);
+    transition: var(--tran-03);
 }
 .greenbtn:hover{
-    background-color: rgb(65, 235, 27);
+    background-color: rgb(105 255 105);
     outline: 0;
 
     font-size:25px;
-    color: var(--text-color);
+    font-weight: 500;
 
-    width: 95px;
-    height: 35px;
+    color: var(--text-color);
+    
+    width: var(--button-play-mxwidth);
     transition: var(--tran-04);
 }
 
