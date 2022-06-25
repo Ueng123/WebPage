@@ -219,11 +219,9 @@ header .image-text .profession{
 .home .text{
     position: relative;
     top: 75px;
-    
-    margin-left: 15%;
-    margin-right: 15%;
-    padding: 0;
-    
+
+    margin-left: 20%;
+    margin-right: 20%;
     font-size: 30px;
     font-weight: 500;
     color: var(--text-color);
@@ -378,6 +376,10 @@ header .image-text .profession{
 .Banner{
     width: 100%;
     height: auto;
+    
+    border-radius: 30px;
+
+    transition: var(--tran-04);
 }
 
 .link{
@@ -393,3 +395,5 @@ header .image-text .profession{
     
     color: var(--text-color);   
 }
+
+/* ===== media event ===== */
