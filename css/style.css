@@ -1,7 +1,7 @@
 /* Google Font Import - Poppins */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 *{
-    margin: 30%;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
@@ -219,7 +219,11 @@ header .image-text .profession{
 .home .text{
     position: relative;
     top: 75px;
-
+    
+    margin-left: 15%;
+    margin-right: 15%;
+    padding: 0;
+    
     font-size: 30px;
     font-weight: 500;
     color: var(--text-color);
@@ -229,11 +233,6 @@ header .image-text .profession{
     
     text-align: center;
     
-    font-size: 60px;
-
-    transition: var(--tran-04);
-}
-.home .text .subtitle{
     font-size: 60px;
 
     transition: var(--tran-04);
@@ -377,19 +376,8 @@ header .image-text .profession{
 }
 
 .Banner{
-    width: 1350px;
+    width: 100%;
     height: auto;
-
-    border-radius: 30px;
-
-    transition: var(--tran-04);
-}
-
-@media (max-width: 1550px) {
-    .Banner{
-        width: 100%;
-        height: auto;
-    }
 }
 
 .link{
