@@ -233,6 +233,11 @@ header .image-text .profession{
 
     transition: var(--tran-04);
 }
+.home .text .subtitle{
+    font-size: 60px;
+
+    transition: var(--tran-04);
+}
 
 .namelogo{
     position: relative;
@@ -372,8 +377,19 @@ header .image-text .profession{
 }
 
 .Banner{
-    width: 100%;
+    width: 1350px;
     height: auto;
+
+    border-radius: 30px;
+
+    transition: var(--tran-04);
+}
+
+@media (max-width: 1550px) {
+    .Banner{
+        width: 100%;
+        height: auto;
+    }
 }
 
 .link{
