@@ -314,8 +314,8 @@ footer {
   width: 100%;
   height: 9em;
   transform:translateY(1rem);
-  color: #f4f4f4;
-  background-color: #ddd;
+  color: #131313;
+  background-color: #f2f2f3;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -327,7 +327,7 @@ footer {
   width: 85%;
 }
 .footerDiv a {
-  color: #f4f4f4;
+  color: #131313;
   text-decoration: none;
   font-size: 0.75rem;
   margin: 0 1rem;
