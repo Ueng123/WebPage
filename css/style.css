@@ -314,11 +314,10 @@ ol {
   height: 9em;
   transform:translateY(5rem);
   color: #191919;
-  background-color: white;
+  background-color: #ddd;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 0 1em 1px #ddd;
 }
 .footerDiv {
   display: flex;
