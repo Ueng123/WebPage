@@ -1,0 +1,365 @@
+
+@charset "UTF-8";
+@import url("https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/static/woff2/SUIT.css");
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.5/dist/web/static/pretendard-dynamic-subset.css");
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.social h3.b {position: relative;}
+
+* {
+  margin: 0;
+  user-select: none;
+  font-family: pretendard;
+}
+
+:root {
+
+  --color-1: #0f574c;
+  --color-2: #157d6d;
+  --color-3: #1ca38e;
+
+  --white      : #29ffde;
+  --black      : #0a302c;
+  --blackP     : #093e34;
+  --blackPP    : #083930;
+
+  --vh : 100vh;
+  
+}
+
+::-webkit-scrollbar {
+  z-index: 0;
+  width: 2.5rem;
+  transition: all 0.5s ease-in-out;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--blackPP);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--black);
+}
+::-webkit-scrollbar-thumb:hover {
+  filter:blur(1rem);
+} 
+
+@keyframes scrollbar {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 10rem;
+  }
+}
+
+
+html {scroll-behavior: smooth;}
+
+body {
+  width: 100vw;
+  height: 100%;
+  overflow-x: hidden;
+  
+  background-color:var(--black);
+}
+
+.shadow {box-shadow: 0 0 0rem #0000000b;}
+
+.sec { width: 100; height: 100vh; margin: 0 10rem;}
+
+#sec1 {
+  z-index:5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background:linear-gradient(45deg, var(--blackP) 50%, var(--blackPP) 50%);
+}
+
+#sec2 {
+  z-index: 10;
+  background:linear-gradient(135deg, var(--blackP) 50%, var(--blackPP) 50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  justify-content: space-evenly;
+}
+
+#sec3 {
+  z-index: 10;
+  background:linear-gradient(45deg, var(--blackP) 50%, var(--blackPP) 50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.sec>.bgimg {
+  position: absolute;
+  background-color: var(--black);
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+}
+
+
+.profile-container {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 15.625rem;
+  height: 23rem;
+  padding: 1.25rem; 
+  background-color: var(--color-1); 
+  border-radius: 0rem; 
+  transition: all 0.5s ease-in-out;
+  z-index: 1;
+
+  animation-name: jaehee;
+  animation-duration:2.5s;
+  animation-duration: leaner;
+  animation-iteration-count:1;
+  animation-direction:alternate;
+  animation-fill-mode: forwards;
+}
+
+.profile-container:hover {
+  padding: 2rem;
+}
+
+
+.profile-image {
+  width: 15.625rem; 
+  height: 15.625rem; 
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 0;
+}
+
+.profile-image img {
+  width: 100%;
+  height: 100%;
+  transition:all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  object-fit: cover;
+  animation-name: op;
+  animation-duration:0.75s;
+  animation-duration: leaner;
+  animation-iteration-count:1;
+  animation-direction:alternate;
+  animation-fill-mode: forwards;
+}
+
+
+.profile-name {
+  font-size: 2.5rem; 
+  width: 13.125rem;
+  font-weight: bold;
+  color: var(--color-3);
+  text-align: center; 
+  transition: all 0.3s ease-in-out;
+
+  animation-name: op;
+  animation-duration:1s;
+  animation-duration: leaner;
+  animation-iteration-count:1;
+  animation-direction:alternate;
+  animation-fill-mode: forwards;
+}
+
+.profile-name:hover,
+#sec2 .cards h2.title:hover {
+  background-color: var(--color-3);
+  color: var(--color-1);
+  letter-spacing: 0.1rem;
+}
+
+#sec2 .cards h2.title:hover::after {
+  content: "?";
+}
+
+.profile-description {
+  font-size: 1.25rem; 
+  width: 13.125rem;
+  letter-spacing: 0.1rem;
+  color: var(--color-1);
+  background-color: var(--color-3);
+  margin-top: 0.3125rem; 
+  text-align: center; 
+  transition: all 0.3s ease-in-out;
+  
+  animation-name: op;
+  animation-duration:1.5s;
+  animation-duration: leaner;
+  animation-iteration-count:1;
+  animation-direction:alternate;
+  animation-fill-mode: forwards;
+}
+
+.profile-description:hover {
+  letter-spacing: 0.2rem;
+}
+
+
+
+.social-links {
+  margin-top: 1.25rem; 
+  text-align: center; 
+  display: flex; 
+  justify-content: center; 
+
+  
+}
+
+.social-link {
+  text-decoration: none;
+  color: var(--color-2); 
+  margin: 0 0.625rem; 
+  transition: all 0.3s;
+
+  animation-name: op;
+  animation-duration:2s;
+  animation-duration: leaner;
+  animation-iteration-count:1;
+  animation-direction:alternate;
+  animation-fill-mode: forwards;
+}
+
+.social-link:hover {
+  color: var(--color-3); 
+  letter-spacing: 0.1rem;
+}
+
+
+.separator {
+  color: var(--color-2); 
+  margin: 0 0.3125rem; 
+}
+
+@keyframes jaehee {
+  0% {
+    padding: 100rem;
+    position: fixed;
+  }
+  100% {
+    padding: 1.25rem;
+    position: relative;
+  }
+}
+
+
+@keyframes op {
+  0% {
+    transform:translateY(10rem) translateX(1rem) rotate(16deg) scale(0%);
+  }
+  100% {}
+}
+
+  /* ============================= */
+
+  .center {
+    width: 100%;
+    display:flex;
+    justify-content: center;
+  }
+
+#sec2 > .title {
+  text-align: center;
+
+  width: 100vw;
+  line-height: 5rem;
+  font-size: 4rem;
+
+  color: var(--color-3)
+}
+
+.sec .cards {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  width: 65vw;
+  height: 50vh;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.sec .cards > li {
+  display: flex;
+  padding: 1rem 2rem;
+  width: 12.5vw;
+  height: 100%;
+  background-color: var(--color-1);
+  color: var(--color-3);
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.sec .cards li * {
+  list-style-type: none;
+  padding: 0 0rem;
+}
+
+.sec .cards h2.title {
+  margin-top: 1rem;
+  font-size: 2rem;
+  text-align: center;
+  font-weight:500;
+  width: 100%;
+  transition: all 0.25s ease-out;
+}
+
+.sec .cards  ul {
+  margin-top: 2rem;
+}
+
+.sec .cards  ul.center {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.sec .cards ul > li {
+  text-align: left;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  margin: 0.5rem 0;
+  transition: all 0.1s ease-in-out;
+}
+
+.sec .cards ul > li:hover {
+  font-weight:300;
+  letter-spacing: 0.0rem;
+}
+
+.sec .cards ul > li.text:hover::after {
+  content: " ! ";
+}
+
+#sec2 .social h3 {
+  z-index: 4;
+  padding: 2rem;
+  background-color: linear-gradient(to top left, #FFFFFF 0%, var(--color-1) 100%);
+  color: var(--color-1)
+}
+
+  /* ============================= */
+
+#sec3 > div {
+  width: 60vw;
+  height: 60vh;
+  padding: 2rem;
+  background: var(--color-1);
+}
+
+#sec3 > div {
+  width: 60vw;
+  height: 60vh;
+  padding: 2rem;
+  background: var(--color-1);
+}

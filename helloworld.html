@@ -1,0 +1,23 @@
+<h1>HELLO, WORLD!</h1>
+<br>
+<p class="me">이걸 찾다니...</p>
+아래 문장을 NUUUG와의 개인 디스코드 메세지로 그대로 복사해 붙여넣기를 바랍니다:<br>
+@Clyde System.out.println("mua punch")
+<script>
+
+  chat = [
+    "이걸 찾다니..",
+    "좀 대단하네",
+    "미치겠다..",
+    "진짜 비밀을 보여줄까?",
+    "무아 펀치.",
+    "..."
+  ]
+  currchat = 0;
+
+  let me = document.querySelector(".me")
+  me.addEventListener("click", function () {
+    me.textContent = chat[currchat];
+    currchat++;
+  })
+</script>

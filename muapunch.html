@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>무1아 죽이기</title>
+    <style>
+        body {
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+            font-family: Arial, sans-serif;
+        }
+        .game-container {
+            width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #444;
+            border: 2px solid #555;
+        }
+        h1 {
+            font-size: 24px;
+        }
+        .boss-container {
+            position: relative;
+        }
+        .boss {
+            background-image:url("https://cdn.discordapp.com/attachments/977833723368185886/1142782527350771763/20230820_075234.jpg?ex=65477caa&is=653507aa&hm=70515a5c50b69c0a2eb5d7fd244d1f3356af12821df5f02f7597e5207a8a3945&");
+            background-repeat: repeat;
+            background-attachment:local;
+            background-size: 7.5rem;
+            padding: 10px;
+            border-radius: 50%;
+            margin: 20px auto;
+            width: 100px;
+            height: 100px;
+            transition: transform 0.2s ease;
+        }
+        .boss.shake {
+            animation: shake 0.5s;
+        }
+        @keyframes shake {
+            0%, 100% {
+                transform: translate(0, 0);
+            }
+            10%, 30%, 50%, 70%, 90% {
+                transform: translate(-5px, -5px);
+            }
+            20%, 40%, 60%, 80% {
+                transform: translate(5px, 5px);
+            }
+        }
+        button {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="game-container">
+        <h1>무 아</h1>
+        <div class="boss-container">
+            <div class="boss" id="boss"></div>
+        </div>
+        <button id="attack-button">Attack</button>
+        <p id="status-message">비밀을 들으러 왔구나. 나야. 널 죽일거지!</p>
+        <p>Health: <span id="boss-health">100</span></p>
+    </div>
+    
+    <script>
+        const bossHealth = document.getElementById("boss-health");
+        const attackButton = document.getElementById("attack-button");
+        const statusMessage = document.getElementById("status-message");
+        const boss = document.getElementById("boss");
+        
+        let health = 2000;
+        
+        attackButton.addEventListener("click", () => {
+            // Clear previous messages
+            statusMessage.textContent = "";
+            
+            boss.classList.add("shake");
+                
+            // Remove the "shake" class after the animation ends
+            boss.addEventListener("animationend", () => {
+                boss.classList.remove("shake");
+            });
+            
+            // Simulate an attack by reducing boss health
+            health -= Math.round(50 * Math.random());
+            bossHealth.textContent = health;
+            
+            if (health <= 0) {
+                bossHealth.textContent = "Defeated!";
+                attackButton.disabled = true;
+                statusMessage.textContent = "HEX 54 52 55 45 5F 4D 75 41 70 55 6E 43 68";
+            }
+            
+            // Move the "Attack" button to a random position on the website
+            const windowWidth = window.innerWidth;
+            const windowHeight = window.innerHeight;
+            const buttonWidth = attackButton.offsetWidth;
+            const buttonHeight = attackButton.offsetHeight;
+            
+            const randomX = Math.floor(Math.random() * (innerWidth/2 - buttonWidth));
+            const randomY = Math.floor(Math.random() * (innerHeight/2 - buttonHeight));
+            
+            attackButton.style.transform = `translate(${randomX}px, ${randomY}px)`;
+        });
+    </script>
+</body>
+</html>
