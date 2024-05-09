@@ -110,7 +110,7 @@ span.AA {
 
 @media only screen and (max-width: 900px){
   .footer {flex-direction: column; margin-bottom: 5vh;}
-  span.a {line-height:1vh; font-size:1rem; width: 75vw; text-align: left;}
+  span.a {line-height:1rem; font-size:1rem; width: 75vw; text-align: left;}
   span.bar {color: transparent;}
 }
 
