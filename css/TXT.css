@@ -131,7 +131,7 @@ span.AA {
 
 @media only screen and (max-width: 450px){
   .footer {flex-direction: column; margin-bottom: 5vh;}
-  span.a {line-height:1vh; font-size:0.75rem; width: 75vw; text-align: left;}
+  span.a {line-height:1rem; font-size:0.75rem; width: 75vw; text-align: left;}
   span.AA {font-size: 1rem;}
   span.bar {color: transparent;}
   .menubutton > button{margin: 3.5rem .5rem;}
