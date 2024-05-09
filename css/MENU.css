@@ -1,0 +1,36 @@
+#MENUSEC {
+  position: absolute;
+  transform:translateX(100vw);
+
+  width: 100vw;
+  height: 100vh;
+  overflow:hidden;
+
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  transition: all 1s ease-in-out;
+}
+
+ol.MENU {
+  margin: 5vh 1rem;
+}
+
+ol.MENU > .link {
+  display:block;
+  width: 80vw;
+
+  border-bottom: 0 solid transparent;
+  border-radius: 0;
+
+  text-align:center;
+  font-size:8.5vw;
+  font-family: "Orbit";
+  color: black;
+
+  padding: 2rem 0;
+
+  transition: all 0.15s ease-in-out;
+}
