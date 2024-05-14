@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+
+*{margin:0;}
+
+body {
+    position: relative;
+
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width:100vw;
+    height:100vh;
+    overflow: hidden;
+}
+
+img {
+    position: absolute;
+    height:100%;
+    width:auto;
+}
+
+h1{
+    position: absolute;
+    z-index: 10;
+
+    color:white;
+    text-shadow: 0 0 1rem black;
+
+    font-size:1.5rem;
+    font-family: "Do Hyeon";
+
+    /*background: -webkit-linear-gradient(red, blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;*/
+}
