@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="css/root.css">
+  <link rel="stylesheet" href="css/LOGO.css">
+  <link rel="stylesheet" href="css/MENU.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/TXT.css">
+
+  <title>NUUUG.com</title>
+</head>
+<body onload="init()">
+  <div id="LOGOSEC">
+    <hr>
+    <div class="center">
+      <div id="canvas">
+        <canvas width="512" height="512"></canvas>
+      </div>
+      <img id="logo" src="imgs/LOGO_0B.png">
+    </div>
+    <hr>
+  </div>
+  <div id="MENUSEC">
+    <ol class="MENU">
+      <li class="link"><a href="https://www.nuuug.com">소개</a></li>
+      <li class="link"><a href="https://www.nuuug.com">팀</a></li>
+      <li class="link"><a href="https://www.nuuug.com">프로젝트</a></li>
+      <li class="link"><a href="https://www.nuuug.com">더알아보기</a></li>
+    </ol>
+  </div>
+  <div id="TXTSEC">
+    <ol class="header" >
+      <li class="link"><a href="https://www.nuuug.com">소개</a></li>
+      <li class="link"><a href="https://www.nuuug.com">팀</a></li>
+      <li class="title"><a href="https://www.nuuug.com">NUUUG</a></li>
+      <li class="link"><a href="https://www.nuuug.com">프로젝트</a></li>
+      <li class="link"><a href="https://www.nuuug.com">더알아보기</a></li>
+      <li class="menubutton"><button onclick="menuInteraction()"><i class='bx bx-menu'></i></button></li>
+    </ol>
+    <div class="footer">
+      <span class="a">ⓒ2024 NUUUG. ALL RIGHTS RESERVED</span>
+      <span class="bar">|</span>
+      <span class="a AA"><a href="https://github.com/ueng123"><i class='bx bxl-github'></i></a>ㅤ|ㅤ<a href="" onclick="copyToClipboard('nuuug0102@gmail.com')" class="copy"><i class='bx bxs-envelope' ></i></a></span>
+    </div>
+  </div>
+</body>
+<script src="js/canvas.js"></script>
+<script src="js/interact.js"></script>
+</html>

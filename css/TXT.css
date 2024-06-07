@@ -1,0 +1,138 @@
+#TXTSEC {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10;
+}
+#TXTSEC * {z-index:11;}
+
+#TXTSEC hr {
+  width: 0;
+  margin: 0 5rem;
+}
+
+a {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+ol.header {
+  width: 80vw;
+  margin: 1rem 10vw;
+
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+ol.header > li.link {
+  width: 10rem;
+
+  border-bottom: 0 solid transparent;
+  border-radius: 0;
+
+  text-align:center;
+  font-size:1.25rem;
+  font-family: "Orbit";
+
+  padding: 1rem 0;
+
+  transition: all 0.15s ease-in-out;
+}
+
+ol.header > li.link:hover{
+  border-bottom: 1rem solid transparent;
+}
+
+li.title {
+  margin: 3rem 0;
+  
+  background: linear-gradient(to top, var(--black), var(--black2) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  text-align:center;
+  font-size:3rem;
+  font-family:"Red Hat Display";
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+
+  display:flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+
+  width: 100vw;
+
+  color: var(--white3);
+}
+
+span.a {
+  width: 50vw;
+  line-height:10vh;
+
+  text-align:center;
+  font-size: 0.75rem;
+  font-family: "Red Hat Display";
+}
+
+span.AA {
+  font-size: 1rem;
+}
+
+.copy::after {
+  background-color: var(--white);
+  color: var(--white);
+  content:"CLICK TO COPY";
+  padding: 0.2rem 0.4rem;
+  margin-left: 1rem;
+  border-radius: 0.5rem;
+  transition: all 0.15s ease-in-out;
+  
+}
+
+.copy:hover::after {
+  color: var(--black);
+}
+
+.menubutton {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.menubutton > button{display:none; margin: 3.5rem;}
+
+@media only screen and (max-width: 900px){
+  .footer {flex-direction: column; margin-bottom: 5vh;}
+  span.a {line-height:1vh; font-size:1rem; width: 75vw; text-align: left;}
+  span.bar {color: transparent;}
+}
+
+@media only screen and (max-width: 670px){
+  span.AA {font-size: 1rem;}
+  span.bar {color: transparent;}
+
+  .link {display:none;}
+  .menubutton > button{
+    display:block;
+    background:transparent;
+    border:none;
+    font-size:3rem;
+    width: 5rem;
+    height: 5rem;
+  }
+}
+
+@media only screen and (max-width: 450px){
+  .footer {flex-direction: column; margin-bottom: 5vh;}
+  span.a {line-height:1vh; font-size:0.75rem; width: 75vw; text-align: left;}
+  span.AA {font-size: 1rem;}
+  span.bar {color: transparent;}
+  .menubutton > button{margin: 3.5rem .5rem;}
+}
